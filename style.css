@@ -15,6 +15,7 @@ body {
 
     /* background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%); */
     background-image: url(ASSESTS/bg.jpg);
+    margin: 0;
     background-position: center center;
     background-size: max(1200px, 100vw);
     background-repeat: no-repeat;
@@ -57,6 +58,7 @@ nav img {
     width: 115px;
     position: relative;
     z-index: 10;
+    /* background-color: aliceblue; */
 }
 
 nav button {
@@ -102,8 +104,8 @@ nav button {
     height: 8px;
 }
 
-.btn {
-    padding: px 10px;
+#lang{
+    padding: 10px 10px;
     font-weight: bold;
     background-color: transparent;
     color: white;
@@ -115,6 +117,7 @@ nav button {
     box-sizing: border-box;
     border-color: white;
     border-width: 2px;
+    cursor: pointer;
 
 }
 
@@ -134,7 +137,7 @@ nav button {
     padding: 15px 141px 16px 13px;
     font-size: 20px;
     border-radius: 4px;
-    border-color: white;
+    border-color:rgba(23, 23, 23, 0.76);;
     background-color: rgba(23, 23, 23, 0.6);
     color: inherit;
     border-width: 2px;
@@ -160,6 +163,7 @@ nav button {
     gap: 10px;
     flex-wrap: wrap;
 }
+
 
 
 /* ************************************************first-section */
@@ -238,6 +242,7 @@ section.first>div :nth-child(2) {
     right: 1vw;
     top: 10px;
 }
+
 
 section.second>div {
     display: flex;
@@ -357,4 +362,132 @@ section.fourth>div :nth-child(2) {
 
 
 
+.faq{
+   width: 100%;
+   height: auto;
+   /* display: flex; */
+   justify-content: center;
+   /* align-items: center; */
+   transition-duration: 2s;
+}
 
+/* .faq{
+    max-width: 100%;
+    max-height: 69vh;
+} */
+.faq h2{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: 900;
+    display: flex;
+    color: white;
+    justify-content: center;
+
+}
+.box-faq{
+    cursor: pointer;
+    font-size: x-large;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(128, 128, 128, 0.283);
+    color: white;
+    padding: 25px;
+    margin:8px auto;
+    max-width: 75vw;
+    transition: all ease-in 0.2s;
+    
+        
+    }
+    .box-faq summary{
+        /* background-color: aliceblue; */
+        font-size: 1.6rem;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+ 
+    .box-faq  p{
+        margin: 10px;
+        font-size: 1.2rem;
+        
+    }
+.box-faq:hover{
+    background-color: #414141;
+    /* color: red; */
+}
+.faq h6{
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 20px;
+}
+.faq input{
+    padding: 15px 141px 16px 13px;
+    font-size: 20px;
+    border-radius: 4px;
+    border-color: white;
+    background-color: rgb(72 72 72 / 59%);
+    color: inherit;
+    border: none;
+    border-width: 2px;  
+}
+.faq .loginid{
+    margin-bottom: 5vh;
+}
+/* ********************************footer  */
+
+footer{
+    
+
+   
+margin:0 10vw;
+height: 45vh;
+    
+}
+.quesNO{
+    color: white;
+    margin: 35px 0 5px;
+   
+}
+.links{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 75vw;
+
+    justify-content: center;
+    
+    
+}
+.links div{
+    display: flex;
+    flex-direction: column;
+    
+}
+.links div a{
+    color: rgba(255, 255, 255, 0.7);
+    /* background-color: wheat; */
+    font-weight:400;
+    font-size: 14px;
+    box-sizing: border-box;
+    padding:  15px 0px 10px 0;
+}
+/* #lang{
+    padding: 10px 10px;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    padding: 5px 25px;
+    font-size: 20px;
+    border-radius: 4px;
+    border-color: transparent;
+    font: inherit;
+    box-sizing: border-box;
+    border-color: white;
+    border-width: 2px;
+} */
